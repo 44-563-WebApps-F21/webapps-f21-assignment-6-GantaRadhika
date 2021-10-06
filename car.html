@@ -34,6 +34,34 @@
 
 
 <p id="result">This text will be replaced </p>
+<p id="res">properties text</p>
+
+<script> 
+ var my_car;
+        function orderCar() {
+
+            my_car = "";
+
+            ele = document.getElementById("cc1").checked
+            a= document.getElementById("cc2").checked
+            g= document.getElementById("cc3").checked
+            my_car = "electric : " + ele + "  "+"ac:  " + a +" " +"gps:  " + g;
+
+            out = document.getElementById("result")
+
+            out.innerHTML = my_car
+        }
+        function updateCar()
+        {
+            my_car="";
+            pro=document.getElementById("ccc1").value
+            val=document.getElementById("ccc2").value
+            my_car=pro+" : "+val
+            out=document.getElementById("res")
+            out.innerHTML=my_car
+
+        }
+    </script>
 
 </body>
 </html> 
